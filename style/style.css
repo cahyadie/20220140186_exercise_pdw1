@@ -1,0 +1,159 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vx;
+}
+
+.corner-text {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  color: #333;
+  margin: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.card {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 50%;
+  padding: 20px;
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(17, 25, 40, 0.75);
+  border-radius: 0px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.card img {
+  height: 150px;
+  width: 150px;
+  margin-top: 15%;
+}
+
+.card h2 {
+  font-family: "Yellowtail", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 60px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding-right: 50px;
+  padding-left: 0px;
+}
+
+span {
+  color: aqua;
+}
+
+.card h3 {
+  font-family: "Yellowtail", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 60px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding-top: -40px;
+  padding-right: 60px;
+}
+
+.card p {
+  color: #cccccc; /* Ganti warna teks isi */
+  font-size: 15px; /* Ganti ukuran teks isi */
+  text-align: left;
+  padding-left: 200px;
+  padding-right: 100px;
+}
+
+.gambar {
+  position: fixed; /* Pastikan elemen memiliki posisi absolut agar dapat menggunakan z-index */
+  top: 5px; /* Atur posisi top */
+  padding: 10px 440px;
+  z-index: 1;
+  filter: drop-shadow(15px 5px 5px rgb(23, 23, 23));
+  width: 100px; /* Atur lebar gambar */
+}
+
+#video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+
+.back-video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .back-video {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.menu {
+  position: fixed; /* Menjadikan posisi tetap relatif terhadap viewport */
+  top: 20px; /* Atur jarak dari atas */
+  right: 20px; /* Atur jarak dari kanan */
+}
+
+.menu ul {
+  list-style-type: none; /* Menghapus bullet points pada daftar */
+  display: flex; /* Mengubah daftar menjadi tata letak flex */
+}
+
+.menu ul li {
+  margin-right: 20px; /* Atur jarak antar item menu */
+}
+
+/* Gaya untuk tautan menu */
+.menu ul li a {
+  color: white; /* Ganti warna teks menu */
+  text-decoration: none; /* Menghapus dekorasi tautan */
+  font-size: 18px; /* Ganti ukuran teks menu */
+}
+
+/* Gaya untuk tautan menu saat dihover */
+.menu ul li a:hover {
+  color: yellow; /* Ganti warna teks menu saat dihover */
+}
+
+#order-btn {
+  position: fixed; /* Menjadikan posisi tetap relatif terhadap viewport */
+  bottom: 20px; /* Atur jarak dari bawah */
+  left: 50%; /* Atur posisi horizontal di tengah */
+  transform: translateX(-50%); /* Pusatkan tombol horizontal */
+  background-color: #333; /* Warna latar belakang tombol */
+  color: white; /* Warna teks tombol */
+  padding: 20px 60px; /* Padding tombol */
+  border: none; /* Hapus border tombol */
+  cursor: pointer; /* Ubah kursor saat mengarah ke tombol */
+  transition: background-color 0.3s, transform 0.3s; /* Animasi transisi */
+  font-size: 11px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  border-radius: 10px;
+}
+
+#order-btn:hover {
+  background-color: #555; /* Ubah warna latar belakang saat dihover */
+  transform: translateX(-50%) scale(1.05); /* Memperbesar tombol saat dihover */
+}
