@@ -6,7 +6,4 @@ orderBtn.addEventListener("click", function () {
   alert("Terima kasih atas pesanan Anda!");
 });
 
-function geserKiri() {
-  var konten = document.querySelector(".konten");
-  konten.style.transform = "translateX(-100%)";
-}
+
